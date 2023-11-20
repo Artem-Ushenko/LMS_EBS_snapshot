@@ -18,7 +18,7 @@ resource "aws_dlm_lifecycle_policy" "daily_snapshot_policy" {
                 count = 1
             }
 
-            tags_to_add {
+            tags_to_add = {
                 SnapshotCreator = "Terraform"
             }
         }
